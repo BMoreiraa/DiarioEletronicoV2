@@ -81,7 +81,7 @@ CREATE TABLE DISCIPLINA
 )
 GO
 /*#################################################################################################################################*/
-CREATE TABLE Frequencia(
+CREATE TABLE FREQUENCIA(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Id_Aluno int NULL,
 	Id_Diario int null,
@@ -180,13 +180,15 @@ SELECT*FROM ALUNO
 GO
 SELECT*FROM BIMESTRE
 GO
-SELECT*FROM BOLETIM
-GO
 SELECT*FROM CIDADE
 GO
 SELECT*FROM DIARIOELE
 GO
 SELECT*FROM DISCIPLINA
+GO
+SELECT*FROM FREQUENCIA
+GO
+SELECT*FROM Nota
 GO
 SELECT*FROM OCORRENCIA
 GO
