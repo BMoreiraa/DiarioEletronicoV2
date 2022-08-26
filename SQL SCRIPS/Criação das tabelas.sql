@@ -19,6 +19,7 @@ CREATE TABLE AGENTEPEDAGOGICO
 )
 GO
 /*#################################################################################################################################*/
+
 CREATE TABLE ALUNO 
 (
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
@@ -51,6 +52,7 @@ CREATE TABLE BIMESTRE
 
 )
 GO
+
 /*#################################################################################################################################*/
 
 CREATE TABLE CIDADE
@@ -86,13 +88,13 @@ CREATE TABLE FREQUENCIA(
 	Id_Aluno int NULL,
 	Id_Diario int null,
 	Faltas bit NULL,
-	data_ datetime NULL,
+	Data_ datetime NULL,
 )
 GO
 
 /*#################################################################################################################################*/
 
-CREATE TABLE Nota(
+CREATE TABLE NOTA(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Id_Aluno int NULL,
 	Id_Turma int NULL,
