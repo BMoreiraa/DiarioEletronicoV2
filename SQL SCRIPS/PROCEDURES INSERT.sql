@@ -80,7 +80,7 @@ CREATE PROCEDURE SP_InserirDiario
 	@Id_Professor INT ,
 	@Id_Turma INT
 AS
-	INSERT INTO DIARIO(Id_Disciplina,Id_Professor,Id_Turma)
+	INSERT INTO DIARIOELE(Id_Disciplina,Id_Professor,Id_Turma)
 	VALUES(@Id_Disciplina,@Id_Professor,@Id_Turma)
 GO
 
@@ -118,10 +118,10 @@ CREATE PROC SP_InserirNota
 	@Id_Aluno INT,
 	@Id_Turma INT,
 	@Id_Diario INT,
-	@notaAluno float
+	@Nota float
 AS
-	INSERT INTO Nota(Id_Aluno,Id_Turma,Id_Diario,notaAluno)
-	VALUES(@Id_Aluno,@Id_Turma,@Id_Diario,CONVERT(FLOAT, ROUND(@notaAluno, 2)))
+	INSERT INTO Nota(Id_Aluno,Id_Turma,Id_Diario,Nota)
+	VALUES(@Id_Aluno,@Id_Turma,@Id_Diario,CONVERT(FLOAT, ROUND(@Nota, 2)))
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
@@ -171,8 +171,8 @@ CREATE PROC SP_InserirProfessor
 	@Senha VARCHAR(150),
 	@NomeUsuario VARCHAR(100)
 AS 
-	INSERT INTO PROFESSOR(Id_Sexo,Id_Cidade,NomeProfessor,CPF,Email,Telefone,DataDeNascimento,Endereco,Setor,CEP,Senha,NomeUsuario)
-	VALUES(@Id_Sexo,@Id_Cidade,@NomeProfessor,@CPF,@Email,@Telefone,@DataDeNascimento,@Endereco,@Setor,@CEP,@Senha,@NomeUsuario)
+	INSERT INTO PROFESSOR(Id_Sexo,Id_Cidade,Nome,CPF,Email,Telefone,DataDeNascimento,Endereco,Setor,CEP,Senha,NomeUsuario)
+	VALUES(@Id_Sexo,@Id_Cidade,@Nome,@CPF,@Email,@Telefone,@DataDeNascimento,@Endereco,@Setor,@CEP,@Senha,@NomeUsuario)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
@@ -195,30 +195,76 @@ GO
 CREATE PROC SP_InserirTurma
 	@Id int OUTPUT ,
 	@Serie varchar(100),
-	@Turno varchar(100)
+	@Id_Turno INT
 As
-	INSERT INTO Turma(Serie,Turno)
-	VALUES(@Serie,@Turno)
+	INSERT INTO Turma(Serie,Id_TURNO)
+	VALUES(@Serie,@Id_Turno)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
+
+/*###################################################################################################################################*/
+
+CREATE PROC SP_InseirTurno
+	@Id int  OUTPUT,
+	@Nome_Turno varchar(100)
+AS
+	INSERT INTO TURNO(Nome_Turno)
+	VALUES(@Nome_Turno)
+	SET @Id = (SELECT @@IDENTITY)
+	--SELECT @@IDENTITY
+GO
+
+/*EXEC SP_InseirTurno 0,'MATUTINO'
+GO*/
+/*EXEC SP_InseirTurno 0,'VESPERTINO'
+GO*/
 
 /*###################################################################################################################################*/
 
 CREATE PROC SP_InseirUF
 	@Id int  OUTPUT,
-	@NomeUF varchar(50)
+	@NomeUF varchar(50),
+	@AbreviacaoUF VARCHAR(10)
 AS
-	INSERT INTO UF(NomeUF)
-	VALUES(@NomeUF)
+	INSERT INTO UF(NomeUF,AbreviacaoUF)
+	VALUES(@NomeUF,@AbreviacaoUF)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
 
+/*EXEC SP_InseirUF 0,'TO'
+GO*/
+
 /*###################################################################################################################################*/
-/*###################################################################################################################################*/
-/*###################################################################################################################################*/
-/*###################################################################################################################################*/
-/*###################################################################################################################################*/
-/*###################################################################################################################################*/
-/*###################################################################################################################################*/
+
+SELECT*FROM AGENTEPEDAGOGICO
+GO
+SELECT*FROM ALUNO
+GO
+SELECT*FROM BIMESTRE
+GO
+SELECT*FROM CIDADE
+GO
+SELECT*FROM DIARIOELE
+GO
+SELECT*FROM DISCIPLINA
+GO
+SELECT*FROM FREQUENCIA
+GO
+SELECT*FROM Nota
+GO
+SELECT*FROM OCORRENCIA
+GO
+SELECT*FROM PLANODEAULA
+GO
+SELECT*FROM PROFESSOR
+GO
+SELECT*FROM SEXO
+GO
+SELECT*FROM TURMA
+GO
+SELECT*FROM TURNO
+GO
+SELECT*FROM UF
+GO

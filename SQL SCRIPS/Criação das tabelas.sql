@@ -173,8 +173,11 @@ CREATE TABLE TURNO
 CREATE TABLE UF
 (
 	Id int PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	NomeUF VARCHAR(50)NULL
+	NomeUF VARCHAR(50)NULL,
+	AbreviacaoUF VARCHAR(10)NULL
 )
+GO
+
 /*#################################################################################################################################*/
 SELECT*FROM AGENTEPEDAGOGICO
 GO
