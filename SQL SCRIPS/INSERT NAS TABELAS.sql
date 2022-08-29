@@ -125,7 +125,9 @@ EXEC SP_InseirUF 0,'TOCANTINS','TO'
 GO*/
 
 /*###################################################################################################################################*/
+
 SELECT* FROM CIDADE
+
 /*EXEC SP_InserirCidade 0,27,'PALMAS'
 GO
 EXEC SP_InserirCidade 0,27,'ARAGUAÍNA'
@@ -249,4 +251,168 @@ GO
 EXEC SP_InserirCidade 0,27,'COUTO MAGALHÃES'
 GO
 EXEC SP_InserirCidade 0,27,'BREJINHO DE NAZARÉ'
+GO
+EXEC SP_InserirCidade 0,27,'PEQUIZEIRO'
+GO
+EXEC SP_InserirCidade 0,27,'ALIANÇA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'SILVANOPÓLIS'
+GO
+EXEC SP_InserirCidade 0,27,'CASEARA'
+GO
+EXEC SP_InserirCidade 0,27,'FIGUEIRÓPOLIS'
+GO
+EXEC SP_InserirCidade 0,27,'SÃO BENTO DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'GOIANORTE'
+GO
+EXEC SP_InserirCidade 0,27,'MARIÓNOPOLIS DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'COMBINADO'
+GO
+EXEC SP_InserirCidade 0,27,'PAU D´ARCO'
+GO
+EXEC SP_InserirCidade 0,27,'SANTA ROSA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'BOM JESUS DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'SÃO SEBASTIÃO DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'APARECIDA DO RIO NEGRO'
+GO
+EXEC SP_InserirCidade 0,27,'DUERÉ'
+GO
+EXEC SP_InserirCidade 0,27,'SAMPAIO'
+GO
+EXEC SP_InserirCidade 0,27,'RIACHINHO'
+GO
+EXEC SP_InserirCidade 0,27,'PONTE ALTA DO BOM JESUS'
+GO
+EXEC SP_InserirCidade 0,27,'BARRA DO OURO'
+GO
+EXEC SP_InserirCidade 0,27,'BERNARDO SAYÃO'
+GO
+EXEC SP_InserirCidade 0,27,'PINDIRAMA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'CARIRI DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'NOVO ACORDO'
+GO
+EXEC SP_InserirCidade 0,27,'RECURSOLÂNDIA'
+GO
+EXEC SP_InserirCidade 0,27,'LOGOA  DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'NOVA ROSÂLANDIA'
+GO
+EXEC SP_InserirCidade 0,27,'CONSEIÇÃO DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'CARRASCO BONITO'
+GO
+EXEC SP_InserirCidade 0,27,'SÃO VALÉRIO'
+GO
+EXEC SP_InserirCidade 0,27,'NAZARÉ'
+GO
+EXEC SP_InserirCidade 0,27,'FÁTIMA'
+GO
+EXEC SP_InserirCidade 0,27,'JAÚ DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'ITAPIRATIN'
+GO
+EXEC SP_InserirCidade 0,27,'LIZARDA'
+GO
+EXEC SP_InserirCidade 0,27,'AURORA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'PRESIDENTE KENNEDY'
+GO
+EXEC SP_InserirCidade 0,27,'MURICILÂNDIA'
+GO
+EXEC SP_InserirCidade 0,27,'BANDEIRANTES DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'ANGICO'
+GO
+EXEC SP_InserirCidade 0,27,'MAURICILÂNDIA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'SANTA MARIA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'SANDOLÂNDIA'
+GO
+EXEC SP_InserirCidade 0,27,'CHAPADA DA NATIVIDADE'
+GO
+EXEC SP_InserirCidade 0,27,'PORTO ALEGRE DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'LAJEADO'
+GO
+EXEC SP_InserirCidade 0,27,'SÃO SALVADOR DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'LUZINÓPOLIS'
+GO
+EXEC SP_InserirCidade 0,27,'PARAQUÊ'
+GO
+EXEC SP_InserirCidade 0,27,'CETENÁRIO'
+GO
+EXEC SP_InserirCidade 0,27,'SANTA TEREZA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'RIO DOS BOIS'
+GO
+EXEC SP_InserirCidade 0,27,'TALISMÃ'
+GO
+EXEC SP_InserirCidade 0,27,'NOVO JARDIN'
+GO
+EXEC SP_InserirCidade 0,27,'PUGMIL'
+GO
+EXEC SP_InserirCidade 0,27,'MATEIROS'
+GO
+EXEC SP_InserirCidade 0,27,'TUPIRATINS'
+GO
+EXEC SP_InserirCidade 0,27,'FORTALEZA DO TABOCÃO'
+GO
+EXEC SP_InserirCidade 0,27,'ABREULÂNDIA'
+GO
+EXEC SP_InserirCidade 0,27,'CARMOLÂNDIA'
+GO
+EXEC SP_InserirCidade 0,27,'SANTA TEREZINHA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'ITAPORÃ DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'SANTA RITA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'NOVO ALEGRE'
+GO
+EXEC SP_InserirCidade 0,27,'CACHOEIRINHA'
+GO
+EXEC SP_InserirCidade 0,27,'MONTE SANTO DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'JUARINA'
+GO
+EXEC SP_InserirCidade 0,27,'BRASILÂNDIA DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'TAIPAS DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'RIO DA CONCEIÇÃO'
+GO
+EXEC SP_InserirCidade 0,27,'IPUEIRAS'
+GO
+EXEC SP_InserirCidade 0,27,'SUCUPIRA'
+GO
+EXEC SP_InserirCidade 0,27,'LAVANDEIRA'
+GO
+EXEC SP_InserirCidade 0,27,'TUPIRAMA'
+GO
+EXEC SP_InserirCidade 0,27,'CRIXÁS DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'SÃO FELIX DO TOCANTINS'
+GO
+EXEC SP_InserirCidade 0,27,'CHAPADA DE AREIA'
+GO
+EXEC SP_InserirCidade 0,27,'OLIVEIRA DE FÁTIMA'
 GO*/
+/*###################################################################################################################################*/
+
+SELECT * FROM SEXO
+
+EXEC SP_InserirSexo 0,'Masculino'
+Go
+EXEC SP_InserirSexo 0,'Feminino'
+Go
+EXEC SP_InserirSexo 0,'Outros'
+Go
