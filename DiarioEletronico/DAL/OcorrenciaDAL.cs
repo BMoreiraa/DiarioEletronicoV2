@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class OcorrenciaDAL
+    public class OcorrenciaDAL
     {
         public Ocorrencia Inserir(Ocorrencia _ocorrencia)
         {
