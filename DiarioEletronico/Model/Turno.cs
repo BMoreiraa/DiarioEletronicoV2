@@ -21,6 +21,7 @@ namespace Model
         {
             get { return nome_Turno; }
             set { nome_Turno = value; }
+
         }
 
     }
