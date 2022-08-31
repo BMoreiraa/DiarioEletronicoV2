@@ -42,6 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BancoDAL.cs" />
+
+    <Compile Include="AgenteDAL.cs" />
+    <Compile Include="BimestreDAL.cs" />
+    <Compile Include="CidadeDAL.cs" />
+    <Compile Include="DiarioDAL.cs" />
+    <Compile Include="DisciplinaDAL.cs" />
+    <Compile Include="FrequenciaDAL.cs" />
     <Compile Include="Conexao.cs" />
     <Compile Include="NotaDAL.cs" />
     <Compile Include="OcorrenciaDAL.cs" />
