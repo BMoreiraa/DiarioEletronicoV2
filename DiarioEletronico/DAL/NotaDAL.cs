@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class NotaDAL
+    public class NotaDAL
     {
         public Nota Inserir(Nota _nota)
         {

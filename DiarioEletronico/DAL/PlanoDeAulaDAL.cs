@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class PlanoDeAulaDAL
+    public class PlanoDeAulaDAL
     {
         public PlanoDeAula Inserir(PlanoDeAula _planoDeAula)
         {

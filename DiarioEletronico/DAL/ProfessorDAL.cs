@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class ProfessorDAL
+    public class ProfessorDAL
     {
         public Professor Inserir(Professor _professor)
         {
