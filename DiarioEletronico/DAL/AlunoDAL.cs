@@ -20,7 +20,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_InserirNota";
+                cmd.CommandText = "SP_InserirAluno";
 
                 cmd.Parameters.Add(new SqlParameter("@Matricula", SqlDbType.Int)
                 {

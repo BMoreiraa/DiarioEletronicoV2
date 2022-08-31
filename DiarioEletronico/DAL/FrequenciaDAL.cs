@@ -1,11 +1,7 @@
 ﻿using Model;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -20,7 +16,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_InserirNota";
+                cmd.CommandText = "SP_InserirFrequencia";
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
