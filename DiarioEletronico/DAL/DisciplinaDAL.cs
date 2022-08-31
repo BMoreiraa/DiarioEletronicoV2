@@ -16,7 +16,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_InserirNota";
+                cmd.CommandText = "SP_InserirDisciplina";
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
