@@ -12,7 +12,7 @@ namespace Model
         private int id_Aluno;
         private int id_Diario;
         private bool faltas;
-        private string data_;
+        private DateTime data_;
 
         public int Id
         {
@@ -38,7 +38,7 @@ namespace Model
             set { faltas = value; }
         }
 
-        public string Data_
+        public DateTime Data_
         {
             get { return data_; }
             set { data_ = value; }
