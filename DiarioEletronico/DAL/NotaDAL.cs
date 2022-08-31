@@ -28,14 +28,14 @@ namespace DAL
                     Value = _nota.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Id_Turma", SqlDbType.Int)
-                {
-                    Value = _nota.Id_Turma
-                });
-
                 cmd.Parameters.Add(new SqlParameter("@Id_Aluno", SqlDbType.Int)
                 {
                     Value = _nota.Id_Aluno
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", SqlDbType.Int)
+                {
+                    Value = _nota.Id_Turma
                 });
 
                 cmd.Parameters.Add(new SqlParameter("@Id_Diario", SqlDbType.Int)
