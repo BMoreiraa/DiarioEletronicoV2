@@ -48,7 +48,15 @@
     <Compile Include="DiarioBLL.cs" />
     <Compile Include="DisciplinaBLL.cs" />
     <Compile Include="FrequenciaBLL.cs" />
+    <Compile Include="NotaBLL.cs" />
+    <Compile Include="OcorrenciaBLL.cs" />
+    <Compile Include="PlanoDeAulaBLL.cs" />
+    <Compile Include="ProfessorBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SexoBLL.cs" />
+    <Compile Include="TurmaBLL.cs" />
+    <Compile Include="TurnoBLL.cs" />
+    <Compile Include="UFBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
