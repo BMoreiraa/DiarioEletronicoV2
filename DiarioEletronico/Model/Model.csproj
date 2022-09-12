@@ -41,8 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgenteP.cs" />
     <Compile Include="Aluno.cs" />
+    <Compile Include="Bimestre.cs" />
+    <Compile Include="Cidade.cs" />
+    <Compile Include="Diario.cs" />
+    <Compile Include="Disciplina.cs" />
+    <Compile Include="Frequencia.cs" />
+    <Compile Include="Nota.cs" />
+    <Compile Include="Ocorrencia.cs" />
+    <Compile Include="PlanoDeAula.cs" />
+    <Compile Include="Professor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sexo.cs" />
+    <Compile Include="Turma.cs" />
+    <Compile Include="Turno.cs" />
+    <Compile Include="UF.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
