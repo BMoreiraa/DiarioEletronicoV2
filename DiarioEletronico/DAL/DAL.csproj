@@ -65,6 +65,10 @@
       <Project>{e3a78491-f549-4c29-9d45-d017a4c65ce0}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UIPrincipal\UIPrincipal.csproj">
+      <Project>{5100ec79-89f4-46ac-bfa3-7afb72b7b05f}</Project>
+      <Name>UIPrincipal</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
