@@ -8,6 +8,7 @@ namespace DAL
         {
             get
             {
+
                 return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=Senailab05";
                 //return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=bruno2003"; 
                                             // BRUNO ALENCAR MOREIRA MINHAS STRINGS DE CONEXÃO
