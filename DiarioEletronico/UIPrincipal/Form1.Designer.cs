@@ -29,7 +29,6 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
-            this.fundoPBX = new System.Windows.Forms.PictureBox();
             this.SAIR = new System.Windows.Forms.Button();
             this.logoPbx = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -40,19 +39,11 @@ namespace UIPrincipal
             this.cBxServidorBanco = new System.Windows.Forms.ComboBox();
             this.Servidor = new System.Windows.Forms.Label();
             this.MostraSenha = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.fundoPBX)).BeginInit();
+            this.salvarString = new System.Windows.Forms.Button();
+            this.AddServidor = new System.Windows.Forms.Button();
+            this.panelConteiner = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.logoPbx)).BeginInit();
             this.SuspendLayout();
-            // 
-            // fundoPBX
-            // 
-            this.fundoPBX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
-            this.fundoPBX.Location = new System.Drawing.Point(0, 0);
-            this.fundoPBX.Name = "fundoPBX";
-            this.fundoPBX.Size = new System.Drawing.Size(500, 500);
-            this.fundoPBX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fundoPBX.TabIndex = 0;
-            this.fundoPBX.TabStop = false;
             // 
             // SAIR
             // 
@@ -116,7 +107,7 @@ namespace UIPrincipal
             this.logar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
             this.logar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logar.Location = new System.Drawing.Point(694, 354);
+            this.logar.Location = new System.Drawing.Point(563, 373);
             this.logar.Name = "logar";
             this.logar.Size = new System.Drawing.Size(121, 35);
             this.logar.TabIndex = 11;
@@ -126,7 +117,6 @@ namespace UIPrincipal
             // cBxServidorBanco
             // 
             this.cBxServidorBanco.BackColor = System.Drawing.Color.White;
-            this.cBxServidorBanco.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBxServidorBanco.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBxServidorBanco.FormattingEnabled = true;
             this.cBxServidorBanco.Items.AddRange(new object[] {
@@ -163,12 +153,50 @@ namespace UIPrincipal
             this.MostraSenha.TabIndex = 14;
             this.MostraSenha.UseVisualStyleBackColor = false;
             // 
+            // salvarString
+            // 
+            this.salvarString.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
+            this.salvarString.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.salvarString.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salvarString.Location = new System.Drawing.Point(714, 373);
+            this.salvarString.Name = "salvarString";
+            this.salvarString.Size = new System.Drawing.Size(112, 35);
+            this.salvarString.TabIndex = 15;
+            this.salvarString.Text = "SalvarString";
+            this.salvarString.UseVisualStyleBackColor = true;
+            this.salvarString.Click += new System.EventHandler(this.salvarString_Click);
+            // 
+            // AddServidor
+            // 
+            this.AddServidor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
+            this.AddServidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddServidor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddServidor.Location = new System.Drawing.Point(650, 439);
+            this.AddServidor.Name = "AddServidor";
+            this.AddServidor.Size = new System.Drawing.Size(112, 35);
+            this.AddServidor.TabIndex = 16;
+            this.AddServidor.Text = "AddServidor";
+            this.AddServidor.UseVisualStyleBackColor = true;
+            this.AddServidor.Click += new System.EventHandler(this.AddServidor_Click);
+            // 
+            // panelConteiner
+            // 
+            this.panelConteiner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
+            this.panelConteiner.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelConteiner.Location = new System.Drawing.Point(0, 0);
+            this.panelConteiner.Name = "panelConteiner";
+            this.panelConteiner.Size = new System.Drawing.Size(500, 500);
+            this.panelConteiner.TabIndex = 17;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 500);
+            this.Controls.Add(this.panelConteiner);
+            this.Controls.Add(this.AddServidor);
+            this.Controls.Add(this.salvarString);
             this.Controls.Add(this.MostraSenha);
             this.Controls.Add(this.Servidor);
             this.Controls.Add(this.cBxServidorBanco);
@@ -179,7 +207,6 @@ namespace UIPrincipal
             this.Controls.Add(this.Usuario);
             this.Controls.Add(this.logoPbx);
             this.Controls.Add(this.SAIR);
-            this.Controls.Add(this.fundoPBX);
             this.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -188,7 +215,6 @@ namespace UIPrincipal
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.fundoPBX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPbx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,8 +222,6 @@ namespace UIPrincipal
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox fundoPBX;
         private System.Windows.Forms.Button SAIR;
         private System.Windows.Forms.PictureBox logoPbx;
         private System.Windows.Forms.TextBox textBox2;
@@ -208,6 +232,9 @@ namespace UIPrincipal
         private System.Windows.Forms.ComboBox cBxServidorBanco;
         private System.Windows.Forms.Label Servidor;
         private System.Windows.Forms.Button MostraSenha;
+        private System.Windows.Forms.Button salvarString;
+        private System.Windows.Forms.Button AddServidor;
+        private System.Windows.Forms.Panel panelConteiner;
     }
 }
 
