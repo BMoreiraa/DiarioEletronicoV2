@@ -42,7 +42,10 @@ namespace UIPrincipal
             this.salvarString = new System.Windows.Forms.Button();
             this.AddServidor = new System.Windows.Forms.Button();
             this.panelConteiner = new System.Windows.Forms.Panel();
+            this.logoopbx = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logoPbx)).BeginInit();
+            this.panelConteiner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoopbx)).BeginInit();
             this.SuspendLayout();
             // 
             // SAIR
@@ -71,7 +74,7 @@ namespace UIPrincipal
             this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(562, 221);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(316, 26);
+            this.textBox2.Size = new System.Drawing.Size(316, 30);
             this.textBox2.TabIndex = 10;
             // 
             // Senha
@@ -80,7 +83,7 @@ namespace UIPrincipal
             this.Senha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Senha.Location = new System.Drawing.Point(565, 200);
             this.Senha.Name = "Senha";
-            this.Senha.Size = new System.Drawing.Size(57, 18);
+            this.Senha.Size = new System.Drawing.Size(71, 23);
             this.Senha.TabIndex = 9;
             this.Senha.Text = "Senha:";
             // 
@@ -89,7 +92,7 @@ namespace UIPrincipal
             this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(562, 154);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(316, 26);
+            this.textBox1.Size = new System.Drawing.Size(316, 30);
             this.textBox1.TabIndex = 8;
             // 
             // Usuario
@@ -98,7 +101,7 @@ namespace UIPrincipal
             this.Usuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Usuario.Location = new System.Drawing.Point(565, 133);
             this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(66, 18);
+            this.Usuario.Size = new System.Drawing.Size(82, 23);
             this.Usuario.TabIndex = 7;
             this.Usuario.Text = "Usuário:";
             // 
@@ -128,7 +131,7 @@ namespace UIPrincipal
             "Servidor 06F"});
             this.cBxServidorBanco.Location = new System.Drawing.Point(563, 296);
             this.cBxServidorBanco.Name = "cBxServidorBanco";
-            this.cBxServidorBanco.Size = new System.Drawing.Size(315, 26);
+            this.cBxServidorBanco.Size = new System.Drawing.Size(315, 31);
             this.cBxServidorBanco.TabIndex = 12;
             // 
             // Servidor
@@ -137,7 +140,7 @@ namespace UIPrincipal
             this.Servidor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Servidor.Location = new System.Drawing.Point(565, 273);
             this.Servidor.Name = "Servidor";
-            this.Servidor.Size = new System.Drawing.Size(158, 18);
+            this.Servidor.Size = new System.Drawing.Size(197, 23);
             this.Servidor.TabIndex = 13;
             this.Servidor.Text = "Selecione o Servidor:";
             // 
@@ -147,7 +150,7 @@ namespace UIPrincipal
             this.MostraSenha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MostraSenha.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.MostraSenha.FlatAppearance.BorderSize = 0;
-            this.MostraSenha.Location = new System.Drawing.Point(855, 223);
+            this.MostraSenha.Location = new System.Drawing.Point(854, 226);
             this.MostraSenha.Name = "MostraSenha";
             this.MostraSenha.Size = new System.Drawing.Size(22, 22);
             this.MostraSenha.TabIndex = 14;
@@ -181,16 +184,27 @@ namespace UIPrincipal
             // 
             // panelConteiner
             // 
-            this.panelConteiner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
+            this.panelConteiner.BackColor = System.Drawing.Color.White;
+            this.panelConteiner.Controls.Add(this.logoopbx);
             this.panelConteiner.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelConteiner.Location = new System.Drawing.Point(0, 0);
             this.panelConteiner.Name = "panelConteiner";
             this.panelConteiner.Size = new System.Drawing.Size(500, 500);
             this.panelConteiner.TabIndex = 17;
             // 
+            // logoopbx
+            // 
+            this.logoopbx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(127)))), ((int)(((byte)(255)))));
+            this.logoopbx.Location = new System.Drawing.Point(0, 0);
+            this.logoopbx.Name = "logoopbx";
+            this.logoopbx.Size = new System.Drawing.Size(500, 500);
+            this.logoopbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logoopbx.TabIndex = 0;
+            this.logoopbx.TabStop = false;
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 500);
@@ -216,6 +230,8 @@ namespace UIPrincipal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logoPbx)).EndInit();
+            this.panelConteiner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logoopbx)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,6 +251,7 @@ namespace UIPrincipal
         private System.Windows.Forms.Button salvarString;
         private System.Windows.Forms.Button AddServidor;
         private System.Windows.Forms.Panel panelConteiner;
+        private System.Windows.Forms.PictureBox logoopbx;
     }
 }
 
