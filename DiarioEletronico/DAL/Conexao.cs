@@ -1,11 +1,13 @@
 ﻿
 
+using Infra;
+
 namespace DAL
 {
     public class Conexao
     {
-        public static string StringDeConexao
-        {
+        public static string StringDeConexao = UsuarioLogado.conexaoAtual;
+        /*{
             get
             {
 
@@ -21,7 +23,7 @@ namespace DAL
                                             // FRANKSNEY
 
             }
-        }
+        }*/
         
     }
 }

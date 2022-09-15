@@ -61,6 +61,10 @@
     <Compile Include="UFDAL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Infra\Infra.csproj">
+      <Project>{E2FD6F58-E77B-482F-B42F-C24311D24B82}</Project>
+      <Name>Infra</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{e3a78491-f549-4c29-9d45-d017a4c65ce0}</Project>
       <Name>Model</Name>

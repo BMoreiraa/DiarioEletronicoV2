@@ -16,5 +16,10 @@ namespace UIPrincipal
         {
             InitializeComponent();
         }
+
+        private void groupBoxDadosBancoSQL_Enter(object sender, EventArgs e)
+        {
+            //groupBoxDadosBancoSQL.
+        }
     }
 }
