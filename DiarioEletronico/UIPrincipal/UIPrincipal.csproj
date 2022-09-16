@@ -89,13 +89,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Infra\Infra.csproj">
-      <Project>{E2FD6F58-E77B-482F-B42F-C24311D24B82}</Project>
-      <Name>Infra</Name>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{1aafd639-4499-4e03-904f-dbe0e20696ad}</Project>
+      <Name>BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{e3a78491-f549-4c29-9d45-d017a4c65ce0}</Project>
-      <Name>Model</Name>
+    <ProjectReference Include="..\Infra\Infra.csproj">
+      <Project>{e2fd6f58-e77b-482f-b42f-c24311d24b82}</Project>
+      <Name>Infra</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

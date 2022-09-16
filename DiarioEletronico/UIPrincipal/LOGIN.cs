@@ -1,9 +1,8 @@
-﻿using Infra;
+﻿using BLL;
+using Infra;
 using System;
 using System.Data;
 using System.Windows.Forms;
-using BLL;
-
 namespace UIPrincipal
 {
     public partial class Login : Form

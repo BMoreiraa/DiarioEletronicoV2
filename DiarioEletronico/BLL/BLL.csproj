@@ -59,8 +59,11 @@
     <Compile Include="UFBLL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{7F04A692-7512-4B6F-A119-000740CA30A7}</Project>
+      <Project>{7f04a692-7512-4b6f-a119-000740ca30a7}</Project>
       <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
