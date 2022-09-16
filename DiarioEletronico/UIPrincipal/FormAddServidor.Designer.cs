@@ -37,24 +37,24 @@ namespace UIPrincipal
             this.labelNomeServidor = new System.Windows.Forms.Label();
             this.textBoxNomeServidor = new System.Windows.Forms.TextBox();
             this.panelAddServidor = new System.Windows.Forms.Panel();
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.groupBoxDadosServidor = new System.Windows.Forms.GroupBox();
-            this.checkBoxDiretorioLocal = new System.Windows.Forms.CheckBox();
-            this.textBoxNomeMaquinaLocalOuIP = new System.Windows.Forms.TextBox();
-            this.labelNomeMaquinaPC = new System.Windows.Forms.Label();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_Salvar = new System.Windows.Forms.Button();
             this.groupBoxDadosLogin = new System.Windows.Forms.GroupBox();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.checkBoxAutenticacaoWindows = new System.Windows.Forms.CheckBox();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelSenha = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.groupBoxDadosServidor = new System.Windows.Forms.GroupBox();
+            this.checkBoxDiretorioLocal = new System.Windows.Forms.CheckBox();
+            this.textBoxNomeMaquinaLocalOuIP = new System.Windows.Forms.TextBox();
+            this.labelNomeMaquinaPC = new System.Windows.Forms.Label();
+            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.groupBoxDadosBancoSQL.SuspendLayout();
             this.panelAddServidor.SuspendLayout();
-            this.groupBoxDadosServidor.SuspendLayout();
             this.groupBoxDadosLogin.SuspendLayout();
+            this.groupBoxDadosServidor.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxDadosBancoSQL
@@ -127,8 +127,8 @@ namespace UIPrincipal
             // 
             this.panelAddServidor.BackColor = System.Drawing.Color.Black;
             this.panelAddServidor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelAddServidor.Controls.Add(this.button2);
-            this.panelAddServidor.Controls.Add(this.button1);
+            this.panelAddServidor.Controls.Add(this.btn_cancelar);
+            this.panelAddServidor.Controls.Add(this.btn_Salvar);
             this.panelAddServidor.Controls.Add(this.groupBoxDadosLogin);
             this.panelAddServidor.Controls.Add(this.groupBoxDadosServidor);
             this.panelAddServidor.Controls.Add(this.groupBoxDadosBancoSQL);
@@ -142,72 +142,33 @@ namespace UIPrincipal
             this.panelAddServidor.Size = new System.Drawing.Size(484, 461);
             this.panelAddServidor.TabIndex = 22;
             // 
-            // buttonSalvar
+            // btn_cancelar
             // 
-            this.buttonSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.ForeColor = System.Drawing.Color.White;
-            this.buttonSalvar.Location = new System.Drawing.Point(668, 312);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvar.TabIndex = 4;
-            this.buttonSalvar.Text = "SALVAR";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelar.Location = new System.Drawing.Point(326, 393);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(87, 33);
+            this.btn_cancelar.TabIndex = 25;
+            this.btn_cancelar.Text = "CANCELAR";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // buttonCancelar
+            // btn_Salvar
             // 
-            this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancelar.ForeColor = System.Drawing.Color.White;
-            this.buttonCancelar.Location = new System.Drawing.Point(749, 312);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 5;
-            this.buttonCancelar.Text = "CANCELAR";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxDadosServidor
-            // 
-            this.groupBoxDadosServidor.Controls.Add(this.checkBoxDiretorioLocal);
-            this.groupBoxDadosServidor.Controls.Add(this.textBoxNomeMaquinaLocalOuIP);
-            this.groupBoxDadosServidor.Controls.Add(this.labelNomeMaquinaPC);
-            this.groupBoxDadosServidor.ForeColor = System.Drawing.Color.White;
-            this.groupBoxDadosServidor.Location = new System.Drawing.Point(69, 189);
-            this.groupBoxDadosServidor.Name = "groupBoxDadosServidor";
-            this.groupBoxDadosServidor.Size = new System.Drawing.Size(344, 95);
-            this.groupBoxDadosServidor.TabIndex = 22;
-            this.groupBoxDadosServidor.TabStop = false;
-            this.groupBoxDadosServidor.Text = "DADOS DA MAQUINA SERVIDOR";
-            // 
-            // checkBoxDiretorioLocal
-            // 
-            this.checkBoxDiretorioLocal.AutoSize = true;
-            this.checkBoxDiretorioLocal.ForeColor = System.Drawing.Color.White;
-            this.checkBoxDiretorioLocal.Location = new System.Drawing.Point(39, 69);
-            this.checkBoxDiretorioLocal.Name = "checkBoxDiretorioLocal";
-            this.checkBoxDiretorioLocal.Size = new System.Drawing.Size(156, 21);
-            this.checkBoxDiretorioLocal.TabIndex = 1;
-            this.checkBoxDiretorioLocal.Text = "Usar Diretorio Local";
-            this.checkBoxDiretorioLocal.UseVisualStyleBackColor = true;
-            // 
-            // textBoxNomeMaquinaLocalOuIP
-            // 
-            this.textBoxNomeMaquinaLocalOuIP.Location = new System.Drawing.Point(34, 40);
-            this.textBoxNomeMaquinaLocalOuIP.Name = "textBoxNomeMaquinaLocalOuIP";
-            this.textBoxNomeMaquinaLocalOuIP.Size = new System.Drawing.Size(219, 24);
-            this.textBoxNomeMaquinaLocalOuIP.TabIndex = 0;
-            // 
-            // labelNomeMaquinaPC
-            // 
-            this.labelNomeMaquinaPC.AutoSize = true;
-            this.labelNomeMaquinaPC.ForeColor = System.Drawing.Color.White;
-            this.labelNomeMaquinaPC.Location = new System.Drawing.Point(37, 20);
-            this.labelNomeMaquinaPC.Name = "labelNomeMaquinaPC";
-            this.labelNomeMaquinaPC.Size = new System.Drawing.Size(189, 17);
-            this.labelNomeMaquinaPC.TabIndex = 12;
-            this.labelNomeMaquinaPC.Text = "IP OU NOME DA MAQUINA:";
+            this.btn_Salvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Salvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_Salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Salvar.ForeColor = System.Drawing.Color.White;
+            this.btn_Salvar.Location = new System.Drawing.Point(71, 393);
+            this.btn_Salvar.Name = "btn_Salvar";
+            this.btn_Salvar.Size = new System.Drawing.Size(86, 33);
+            this.btn_Salvar.TabIndex = 24;
+            this.btn_Salvar.Text = "SALVAR";
+            this.btn_Salvar.UseVisualStyleBackColor = true;
+            this.btn_Salvar.Click += new System.EventHandler(this.btn_Salvar_Click);
             // 
             // groupBoxDadosLogin
             // 
@@ -269,31 +230,72 @@ namespace UIPrincipal
             this.labelSenha.TabIndex = 10;
             this.labelSenha.Text = "SENHA:";
             // 
-            // button1
+            // groupBoxDadosServidor
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(71, 393);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 33);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "SALVAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.groupBoxDadosServidor.Controls.Add(this.checkBoxDiretorioLocal);
+            this.groupBoxDadosServidor.Controls.Add(this.textBoxNomeMaquinaLocalOuIP);
+            this.groupBoxDadosServidor.Controls.Add(this.labelNomeMaquinaPC);
+            this.groupBoxDadosServidor.ForeColor = System.Drawing.Color.White;
+            this.groupBoxDadosServidor.Location = new System.Drawing.Point(69, 189);
+            this.groupBoxDadosServidor.Name = "groupBoxDadosServidor";
+            this.groupBoxDadosServidor.Size = new System.Drawing.Size(344, 95);
+            this.groupBoxDadosServidor.TabIndex = 22;
+            this.groupBoxDadosServidor.TabStop = false;
+            this.groupBoxDadosServidor.Text = "DADOS DA MAQUINA SERVIDOR";
             // 
-            // button2
+            // checkBoxDiretorioLocal
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(326, 393);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 33);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "CANCELAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.checkBoxDiretorioLocal.AutoSize = true;
+            this.checkBoxDiretorioLocal.ForeColor = System.Drawing.Color.White;
+            this.checkBoxDiretorioLocal.Location = new System.Drawing.Point(39, 69);
+            this.checkBoxDiretorioLocal.Name = "checkBoxDiretorioLocal";
+            this.checkBoxDiretorioLocal.Size = new System.Drawing.Size(156, 21);
+            this.checkBoxDiretorioLocal.TabIndex = 1;
+            this.checkBoxDiretorioLocal.Text = "Usar Diretorio Local";
+            this.checkBoxDiretorioLocal.UseVisualStyleBackColor = true;
+            // 
+            // textBoxNomeMaquinaLocalOuIP
+            // 
+            this.textBoxNomeMaquinaLocalOuIP.Location = new System.Drawing.Point(34, 40);
+            this.textBoxNomeMaquinaLocalOuIP.Name = "textBoxNomeMaquinaLocalOuIP";
+            this.textBoxNomeMaquinaLocalOuIP.Size = new System.Drawing.Size(219, 24);
+            this.textBoxNomeMaquinaLocalOuIP.TabIndex = 0;
+            // 
+            // labelNomeMaquinaPC
+            // 
+            this.labelNomeMaquinaPC.AutoSize = true;
+            this.labelNomeMaquinaPC.ForeColor = System.Drawing.Color.White;
+            this.labelNomeMaquinaPC.Location = new System.Drawing.Point(37, 20);
+            this.labelNomeMaquinaPC.Name = "labelNomeMaquinaPC";
+            this.labelNomeMaquinaPC.Size = new System.Drawing.Size(189, 17);
+            this.labelNomeMaquinaPC.TabIndex = 12;
+            this.labelNomeMaquinaPC.Text = "IP OU NOME DA MAQUINA:";
+            // 
+            // buttonSalvar
+            // 
+            this.buttonSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSalvar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalvar.ForeColor = System.Drawing.Color.White;
+            this.buttonSalvar.Location = new System.Drawing.Point(668, 312);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalvar.TabIndex = 4;
+            this.buttonSalvar.Text = "SALVAR";
+            this.buttonSalvar.UseVisualStyleBackColor = true;
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancelar.ForeColor = System.Drawing.Color.White;
+            this.buttonCancelar.Location = new System.Drawing.Point(749, 312);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelar.TabIndex = 5;
+            this.buttonCancelar.Text = "CANCELAR";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
             // FormAddServidor
             // 
@@ -313,10 +315,10 @@ namespace UIPrincipal
             this.groupBoxDadosBancoSQL.PerformLayout();
             this.panelAddServidor.ResumeLayout(false);
             this.panelAddServidor.PerformLayout();
-            this.groupBoxDadosServidor.ResumeLayout(false);
-            this.groupBoxDadosServidor.PerformLayout();
             this.groupBoxDadosLogin.ResumeLayout(false);
             this.groupBoxDadosLogin.PerformLayout();
+            this.groupBoxDadosServidor.ResumeLayout(false);
+            this.groupBoxDadosServidor.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -337,8 +339,8 @@ namespace UIPrincipal
         private System.Windows.Forms.Label labelNomeMaquinaPC;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Button buttonCancelar;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.Button btn_Salvar;
         private System.Windows.Forms.GroupBox groupBoxDadosLogin;
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.CheckBox checkBoxAutenticacaoWindows;

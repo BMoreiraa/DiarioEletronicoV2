@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.Windows.Forms;
+using BLL;
 
 namespace UIPrincipal
 {
@@ -60,7 +61,7 @@ namespace UIPrincipal
             string nome;
             string senha;
 
-            AgentePedagogicoBLL agenteBLL = new AgentePedagogicoBLL();
+            AgenteBLL agenteBLL = new AgenteBLL();
             BindingSource AgenteBindingSource = new BindingSource();
             AgenteBindingSource.DataSource = agenteBLL.Buscar(textBoxUsuario.Text);
 
