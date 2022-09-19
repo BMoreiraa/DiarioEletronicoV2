@@ -85,7 +85,7 @@ namespace UIPrincipal
                 {
                     Logou = true;
                     this.Visible = !this.Visible;
-                    using (PrincipalAgente frn = new PrincipalAgente())
+                    using (FormPrincipalAgente frn = new FormPrincipalAgente())
                     {
                         frn.ShowDialog();
                     }

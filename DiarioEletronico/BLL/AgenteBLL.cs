@@ -1,5 +1,6 @@
 ﻿using DAL;
 using Model;
+using System.Data;
 
 namespace BLL
 {
@@ -9,6 +10,12 @@ namespace BLL
         {
             AgenteDAL agenteDAL = new AgenteDAL();
             return agenteDAL.Inserir(agente);
+        }
+
+        public DataTable Buscar(string _filtro)
+        {
+            AgenteDAL agenteDAL = new AgenteDAL();
+            return agenteDAL.Buscar(_filtro);
         }
     }
 }
